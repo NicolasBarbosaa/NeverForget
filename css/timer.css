@@ -1,0 +1,103 @@
+.quadradoGeral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: linear 2px #123865;
+    background-color: rgba(68,127,255, 0.5);
+    opacity: 0.7;
+    gap: 20px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10;
+    height: 300px;
+}
+.titulosBotoes {
+    display: flex;
+    gap: 20px;
+    background: none;
+}
+.botoesTimer {
+    background: none;
+    border: none;
+    color: #ffffffe0;
+    font-size: 20px;
+}
+
+#timer{
+    width: 100px;
+    height: 100px;
+}
+
+.numeroTimer {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 100px;
+    margin-left: -120px;
+}
+.botaoMusica {
+    display: flex;
+    color: #ffffff;
+    gap: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.comecar {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #9d6bec 0%, #22468e 100%);
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 10px;
+    border: none;
+}
+/* ------------ BOTÃO MÚSICA ----------- */
+
+.toggle {
+    --width: 50px;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+  
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .toggle__input {
+    display: none;
+  }
+  
+  .toggle__fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background: #dddddd;
+    transition: background                                                                                                                                    0.2s;
+  }
+  
+  .toggle__input:checked ~ .toggle__fill {
+    background: #009578;
+  }
+  
+  .toggle__fill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--height);
+    width: var(--height);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+    transition: transform 0.2s;
+  }
+  
+  .toggle__input:checked ~ .toggle__fill::after {
+    transform: translateX(var(--height));
+  }
+  

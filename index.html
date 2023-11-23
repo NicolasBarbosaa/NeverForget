@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/timer.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1 class="textoTitulo"><span class="negrito">Aprimore sua <br> 
+                perfomance,<br> 
+                </span>
+                dedique-se ao <br>
+                que realmente<br>
+                importa.</h1>
+        </div>
+    </header>
+    <main>
+        <div class="quadradoGeral">
+            <div class="titulosBotoes">
+                <button class="botoesTimer">Foco</button>
+                <button class="botoesTimer">Descanso Curto</button>
+                <button class="botoesTimer">Descanso Longo</button>
+            </div>
+            <div><p class="numeroTimer" id="timer">25:00</p></div>
+            <div class="botaoMusica">
+                <label class="toggle" for="myToggle">
+                    <input class="toggle__input" name="" type="checkbox" id="myToggle">
+                    <div class="toggle__fill"></div>
+                </label>
+                <p>Música</p>
+            </div>
+            <button id="start" class="comecar">Começar</button>
+        </div>
+        <div class="andamento">
+            <p>#Em Andamento</p>
+            <hr>
+        </div>
+        <div class="tarefas">
+            <h2 class="textoTarefas">Lista de Tarefas:</h2>
+
+            <form class="formulario-cadastro">
+                <input type="text" id="input-tarefas">
+                <button id="add-tarefa">Adicionar</button>
+               
+            </form>
+             <ul id="listaAfazeres"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>Iniciativa Imaginária, Não Destinada ao Comércio. Visuais Criados com inteligência artificial através do Adobe Firefly, elaborados por João Carlos.</p>
+    </footer>
+</body>
+
+</html>
